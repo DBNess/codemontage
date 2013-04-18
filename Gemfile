@@ -18,6 +18,7 @@ gem 'simple_form'
 
 # Data & Features
 gem 'acts-as-taggable-on', '~> 2.3.1'
+gem 'github_api'
 
 # Test Suite
 group :development, :test do 
