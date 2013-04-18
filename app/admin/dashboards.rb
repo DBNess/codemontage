@@ -4,6 +4,14 @@ ActiveAdmin::Dashboards.build do
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
 
+  section "Summary Stats", :priority => 1 do
+    ul do
+      li link_to User.count.to_s + " Users" + " (" + User.with_github.count.to_s + " with Github)", admin_users_path
+      li link_to Organization.count.to_s + " Organizations", admin_organizations_path
+      li link_to Project.count.to_s + " Projects", admin_projects_path
+    end
+  end
+
   section "Top User Causes", :priority => 2 do
     ul do
       UserProfile.tag_counts_on(:causes).last(5).map do |tag|
