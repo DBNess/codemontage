@@ -4,7 +4,7 @@ ActiveAdmin::Dashboards.build do
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
 
-  section "Top User Causes", :priority => 1 do
+  section "Top User Causes", :priority => 2 do
     ul do
       UserProfile.tag_counts_on(:causes).last(5).map do |tag|
         li link_to(tag.name + " (" + UserProfile.tagged_with(tag).count.to_s + ")", admin_tag_path(tag))
@@ -12,7 +12,7 @@ ActiveAdmin::Dashboards.build do
     end
   end
   
-  section "Top User Technologies", :priority => 1 do
+  section "Top User Technologies", :priority => 2 do
     ul do
       UserProfile.tag_counts_on(:technologies).last(5).map do |tag|
         li link_to(tag.name + " (" + UserProfile.tagged_with(tag).count.to_s + ")", admin_tag_path(tag))
