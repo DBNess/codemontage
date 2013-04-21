@@ -84,6 +84,12 @@ GEM
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     fssm (0.2.9)
+    github_api (0.9.7)
+      faraday (~> 0.8.1)
+      hashie (>= 1.2)
+      multi_json (~> 1.4)
+      nokogiri (~> 1.5.2)
+      oauth2
     has_scope (0.5.1)
     hashie (1.2.0)
     hike (1.2.1)
@@ -121,6 +127,7 @@ GEM
       sassy-math (>= 1.5)
     multi_json (1.5.0)
     multipart-post (1.1.5)
+    nokogiri (1.5.5)
     oauth2 (0.8.0)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -228,6 +235,7 @@ DEPENDENCIES
   compass-rails
   devise
   foundation-icons-sass-rails
+  github_api
   jquery-rails
   meta_search (>= 1.1.0.pre)
   omniauth
