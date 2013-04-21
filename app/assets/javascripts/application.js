@@ -55,3 +55,4 @@ UTIL = {
 
 //document.observe("dom:loaded", UTIL.init); //prototype
 $(document).ready(UTIL.init); //jquery
+$(document).foundation();
