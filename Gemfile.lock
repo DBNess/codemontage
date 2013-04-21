@@ -226,4 +226,4 @@ DEPENDENCIES
   shoulda-matchers
   simple_form
   uglifier (>= 1.0.3)
-  zurb-foundation
+  zurb-foundation (~> 4.1.0)
