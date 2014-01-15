@@ -6,7 +6,8 @@
         <li><%= link_to project.name, project_path(project) %></li>
       <% end %>
     </ul>
-    <p>Looking for something else? Browse more <%= link_to "projects to change the world", projects_path %>.</p>
+    <p>Looking for something else?<br>
+      Browse more <%= link_to "projects to change the world", projects_path %>.</p>
   <% else %>
     <p>No favorites yet? We'd recommend <%=  %>. Or, browse more <%= link_to "projects to change the world", projects_path %>.</p>
   <% end %>  
