@@ -8,7 +8,7 @@ Join our mission to create superhero coders! You can get involved by taking any 
 
 1. [Register for CodeMontage](http://codemontage.com/auth/github).
 2. [Follow us on Twitter](http://twitter.com/CodeMontage).
-3. Be the change you wish to see by submitting a [pull request](https://github.com/CodeMontageHQ/codemontage/pulls/new) to improve the platform. *Please include a screenshot of any user interface changes with all pull requests.*
+3. Be the change you wish to see by [creating a branch](http://guides.github.com/overviews/flow) submitting a [pull request](https://github.com/CodeMontageHQ/codemontage/pulls/new) to improve the platform. *Please include a screenshot of any user interface changes with all pull requests.*
 4. Suggest an improvement by opening an [issue](https://github.com/CodeMontageHQ/codemontage/issues/new). 
 (We recommend including [emojis](http://www.emoji-cheat-sheet.com) for maximum effectiveness.)
 5. Reach out to us at hello@codemontage.com.
@@ -22,6 +22,8 @@ To get started,
 * Install Rails. We recommend [Rails Installer](http://railsinstaller.org).
 * Install Postgres. We recommend [Postgres App](http://postgresapp.com). 
   (If you're using Mac OS X Lion, you may need [this fix for Postgres](http://stackoverflow.com/questions/9354122/how-to-install-postgresql-9-1-on-osx-lion).)
+* Clone the CodeMontage Repo:  `git clone https://github.com/CodeMontageHQ/codemontage.git`
+* Install dependencies: `cd codemontage`, `bundle install`
 * Configure the app for your local database by copying *database.yml.sample* to *database.yml* and making any changes needed for your database setup (possibly `rake db:create`).
 * Once your database is created, run `rake db:migrate`.
 * Load helpful example data into your local database by running `rake db:seed`.
@@ -33,4 +35,4 @@ Congratulations, you're ready to help build CodeMontage!
 
 ## License
 
-Copyright (c) 2013 Code for Humanity, LLC. See [LICENSE](https://github.com/CodeMontageHQ/codemontage/tree/master/LICENSE) for details.
+Copyright (c) 2014 Code for Humanity, LLC. See [LICENSE](https://github.com/CodeMontageHQ/codemontage/tree/master/LICENSE) for details.

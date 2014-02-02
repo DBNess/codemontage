@@ -8,9 +8,17 @@ ActiveAdmin.register_page "Dashboard" do
         panel "Summary Stats", :priority => 1 do
           para "So far, we're helping: "
           ul do
-            li link_to User.count.to_s + " Users" + " (" + User.with_github.count.to_s + " with Github)", admin_users_path
+            li link_to User.count.to_s + " Users" + " (" + User.with_github.count.to_s + " with GitHub)", admin_users_path
             li link_to Organization.count.to_s + " Organizations", admin_organizations_path
             li link_to Project.count.to_s + " Projects", admin_projects_path
+          end
+        end
+
+        panel "Unapproved Projects", :priority => 4 do
+          ul do
+            Project.where(is_approved: false).map do |proj|
+              li link_to(proj.name, admin_project_path(proj))
+            end
           end
         end
       end
