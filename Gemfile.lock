@@ -96,7 +96,6 @@ GEM
       activerecord (>= 3.0, < 4.0)
     fssm (0.2.10)
     geocoder (1.1.9)
-    gmaps4rails (2.1.2)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -247,7 +246,6 @@ DEPENDENCIES
   devise (~> 2.2.8)
   friendly_id (~> 4.0.10)
   geocoder
-  gmaps4rails
   jquery-rails
   meta_search (>= 1.1.0.pre)
   newrelic_rpm (~> 3.7.1.182)
@@ -259,7 +257,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 3.2.17)
   rspec-rails
-  sass-rails (= 3.2.6)
+  sass-rails (~> 3.2.3)
   shoulda-matchers
   simple_form
   uglifier (>= 1.0.3)
