@@ -20,6 +20,9 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'simple_form'
 
+# Payments
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 # Data & Features
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'friendly_id', '~> 4.0.10'

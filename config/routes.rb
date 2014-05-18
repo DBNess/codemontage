@@ -17,6 +17,9 @@ CodeMontage::Application.routes.draw do
   match '/auth/:service/callback' => 'services#create' 
   resources :services, :only => [:create, :destroy]
   
+  # Payments
+  resources :charges
+  
   # Organizations and project information
   resources :jobs
   resources :organizations
